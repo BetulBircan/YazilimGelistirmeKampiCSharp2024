@@ -15,5 +15,11 @@ namespace Business.Concrete
 
         }
 
+        //İçerisinde verdiğimiz tipte bir listedir.
+        public List<Person> GetList() 
+        {
+            return null;
+        }
+
     }
 }

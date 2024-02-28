@@ -23,6 +23,59 @@ SelamVer();
 //int sonuc = Topla( );
 int sonuc = Topla(6,58);
 
+//Diziler/Arrays = tanımladığımız tipte veriler tutan yapılardır.
+string ogrenci1 = "Betül";
+string ogrenci2 = "Ebrar";
+string ogrenci3 = "Kağan";
+
+Console.WriteLine(ogrenci1);
+Console.WriteLine(ogrenci2);
+Console.WriteLine(ogrenci3);
+
+string[] ogrenciler = new String[3];  //referans tipli ürünleri kullanabilmrn için nrelemen yani heap bölgesine kaydetmen lazım. stack kısmında da  ogrenciler değişkeni tutuluyor.
+ogrenciler[0] = "Ebrar";
+ogrenciler[1] = "Betül";
+ogrenciler[2] = "Kağan";
+
+ogrenciler = new String[4]; //new i gördüğü anda hrappta yeni bir alan tanımladı öncekiler gitti silindi yeni bir adreste tutuldu.
+ogrenciler[3] = "Hüseyin";
+
+//döngüler-for
+for (int i = 0; i < ogrenciler.Length; i++)
+{
+    Console.WriteLine(ogrenciler[i]);
+}
+
+//Referans Tipler ----> Array,Class, Interface, Abstract
+
+//Örnek : 
+string[] sehirler1 = new[] {"İstanbul","Bolu","Kocaeli" };
+string[] sehirler2 = new[] { "İzmir", "Ankara", "Bursa" };
+
+sehirler2 = sehirler1;
+sehirler1[0] = "Adana";
+Console.WriteLine(sehirler2[0]); //Adana
+
+//dizi formatındaki yapıları döner.
+foreach (string sehir in sehirler1)
+{
+    Console.WriteLine(sehir);
+}
+
+//2015-den beri diziler daha az kullanılmaktadır.onun yerine List<> kullanılır.
+List<string> yenisSehirler1 = new List<string> {"Ankara 1","İstanbul 1","İzmir 1" };
+yenisSehirler1.Add("Adana 1");
+foreach (string sehir in yenisSehirler1)
+{
+    Console.WriteLine(sehir);
+}
+
+//Ornek 2 ----> Değer Tipler
+int sayi1 = 10;
+int sayi2 = 20;
+sayi2 = sayi1; //sayi2 = 10
+sayi1 = 30;
+Console.WriteLine(sayi2); //10
 
 
 Console.ReadLine();
