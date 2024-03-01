@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Business.Concrete
 {
-    public class PttManager
+    public class PttManager : ISupplierService
     {
         //Dependency Injecion
         private IApplicantService _applicantService;
@@ -25,6 +25,10 @@ namespace Business.Concrete
             {
                 Console.WriteLine(person.FirstName + " " + "için maske verildi");
 
+            }
+            else
+            {
+                Console.WriteLine(person.FirstName + " " + "için maske VERİLEMEDİ");
             }
         }
     }

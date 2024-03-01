@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System.Data.SqlTypes;
+using Business.Concrete;
+using Entities.Concrete;
 
 Console.WriteLine("Hello, World!");
 
@@ -56,6 +57,16 @@ sehirler2 = sehirler1;
 sehirler1[0] = "Adana";
 Console.WriteLine(sehirler2[0]); //Adana
 
+Person person1 = new Person();
+person1.FirstName = "Betül";
+person1.LastName = "Bircan";
+person1.DateOfBirthYear = 1996;
+person1.NationalIdentityNumber = 123;
+//burada tc kimlilk numarası gerçek olursa kabul ediyor
+
+Person person2 = new Person();
+person2.FirstName = "Gaye";
+
 //dizi formatındaki yapıları döner.
 foreach (string sehir in sehirler1)
 {
@@ -76,6 +87,10 @@ int sayi2 = 20;
 sayi2 = sayi1; //sayi2 = 10
 sayi1 = 30;
 Console.WriteLine(sayi2); //10
+
+//maske verme işlemi-ptt
+PttManager pttManager = new PttManager(new PersonManager());
+pttManager.GiveMask(person1);
 
 
 Console.ReadLine();
@@ -124,6 +139,8 @@ Console.WriteLine(tutar * 1.18);
 
 Console.WriteLine(tutar * 1.18);
 }
+
+
 
 public class Vatandas
 {
