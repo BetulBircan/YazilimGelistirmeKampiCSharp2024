@@ -14,5 +14,9 @@ Console.WriteLine("Number1 is {0}",number1);
 long number2 = -9223372036854775808; //sınır buradan başlar  9223372036854775807 değerleri arasında değer alabilir. 64 bitlik yer kaplar.
 Console.WriteLine("Number2 is {0}",number2);
 
+//short veri tipi 16 bitlik yer kaplar.
+short number3 = -32768;  //sınır buradan başlar 32767 arasında değer alabilir.
+Console.WriteLine("Number3 is {0}",number3);
+
 //Console.WriteLine("Hello, World!");
 Console.ReadLine();
