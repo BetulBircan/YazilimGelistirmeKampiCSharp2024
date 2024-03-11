@@ -22,5 +22,8 @@ Console.WriteLine("Number3 is {0}",number3);
 byte number4 = 255; //256 ya da -1 değeri veremezsiniz.
 Console.WriteLine("Number4 is {0}", number4);
 
+//bool(boolean): Mantıksal veri tipidir, true ya da false değeri olur. şart koşullarında (if) genellikle kullanılır.
+bool condition = false; //ya da true değeri alır. değer tiplidir.
+
 //Console.WriteLine("Hello, World!");
 Console.ReadLine();
