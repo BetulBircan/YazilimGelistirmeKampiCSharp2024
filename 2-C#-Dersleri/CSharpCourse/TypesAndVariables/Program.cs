@@ -18,5 +18,9 @@ Console.WriteLine("Number2 is {0}",number2);
 short number3 = -32768;  //sınır buradan başlar 32767 arasında değer alabilir.
 Console.WriteLine("Number3 is {0}",number3);
 
+//byte : bellekte 8 bit yer kaplar. 0 ile 255 arasında değer tutar. Değer tiplidir.
+byte number4 = 255; //256 ya da -1 değeri veremezsiniz.
+Console.WriteLine("Number4 is {0}", number4);
+
 //Console.WriteLine("Hello, World!");
 Console.ReadLine();
