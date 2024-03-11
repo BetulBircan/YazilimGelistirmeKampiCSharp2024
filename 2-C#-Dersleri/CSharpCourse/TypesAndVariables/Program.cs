@@ -25,5 +25,12 @@ Console.WriteLine("Number4 is {0}", number4);
 //bool(boolean): Mantıksal veri tipidir, true ya da false değeri olur. şart koşullarında (if) genellikle kullanılır.
 bool condition = false; //ya da true değeri alır. değer tiplidir.
 
+//char : tek tırnak ile atama yapılır .tek harf , tek karakter tutar. ascii characterleri tutmaya yarar.
+char character = 'A';
+Console.WriteLine("Character is : {0}", character);
+
+//integer değerine de çevrilebilir yani ascii kodu karşılığına. değer tiplidir.
+Console.WriteLine("Character is {0}",(int)character);
+
 //Console.WriteLine("Hello, World!");
 Console.ReadLine();
