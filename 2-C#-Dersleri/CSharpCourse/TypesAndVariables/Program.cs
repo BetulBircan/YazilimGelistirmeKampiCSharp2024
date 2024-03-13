@@ -34,3 +34,7 @@ Console.WriteLine("Character is {0}",(int)character);
 
 //Console.WriteLine("Hello, World!");
 Console.ReadLine();
+
+//double : ondalıklı sayıları tutar. 10 gibi tam sayı da verilebilir.64 bitlik veri tutar.
+double number5 = 10.4;
+Console.WriteLine("Number5 is {0}", number5);
