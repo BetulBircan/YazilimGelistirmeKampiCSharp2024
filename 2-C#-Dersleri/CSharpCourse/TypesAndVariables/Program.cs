@@ -35,6 +35,11 @@ Console.WriteLine("Character is {0}",(int)character);
 //Console.WriteLine("Hello, World!");
 Console.ReadLine();
 
-//double : ondalıklı sayıları tutar. 10 gibi tam sayı da verilebilir.64 bitlik veri tutar.
+//double : ondalıklı sayıları tutar. 10 gibi tam sayı da verilebilir.64 bitlik veri tutar. virgülden sonra 15 16 tane karakter tutar(sayı olarak)
 double number5 = 10.4;
 Console.WriteLine("Number5 is {0}", number5);
+
+//decimal : double gibi ondalıklı sayıları tutar. para gibi hassas değerleri tutmak için kullanılır. virgülden sonra 28 29 tane değer tutabilir(sayı olarak).
+decimal number6 = 10.4m;  //10.4M olarak yazılabilir. 10 gibi tam sayı da verilebilir
+Console.WriteLine("Number6 is {0}", number6);
+
