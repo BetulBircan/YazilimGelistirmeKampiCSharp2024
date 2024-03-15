@@ -32,8 +32,6 @@ Console.WriteLine("Character is : {0}", character);
 //integer değerine de çevrilebilir yani ascii kodu karşılığına. değer tiplidir.
 Console.WriteLine("Character is {0}",(int)character);
 
-//Console.WriteLine("Hello, World!");
-Console.ReadLine();
 
 //double : ondalıklı sayıları tutar. 10 gibi tam sayı da verilebilir.64 bitlik veri tutar. virgülden sonra 15 16 tane karakter tutar(sayı olarak)
 double number5 = 10.4;
@@ -42,4 +40,25 @@ Console.WriteLine("Number5 is {0}", number5);
 //decimal : double gibi ondalıklı sayıları tutar. para gibi hassas değerleri tutmak için kullanılır. virgülden sonra 28 29 tane değer tutabilir(sayı olarak).
 decimal number6 = 10.4m;  //10.4M olarak yazılabilir. 10 gibi tam sayı da verilebilir
 Console.WriteLine("Number6 is {0}", number6);
+
+
+//Enum : programlamada magicstring denilen değerler tutmak yerine örneğin string days="mondays" diye string değerini karşılaştırmak yerine meela if("Fridays") {}
+//yerine if(Days.Fridday) {} olarak değiştirebiliriz.
+
+Console.WriteLine(Days.Friday);
+
+//enum değerleri 0 dan başlar ve friday de 4 e karşılık gelir ekrana 4 yazar
+Console.WriteLine((int)Days.Friday);
+
+//Console.WriteLine("Hello, World!");
+Console.ReadLine();
+
+//enum değerlerine başlangıç değeri verebiliriz. 1.sine 10 değeri verildiğinde 2.sini kendisi otomatik olarak 11 diye sıralı atar.
+//istersek kendimiz hepsine başlangıç değeri de atayabiliriz
+enum Days
+{
+    Monday = 10, Tuesday = 20, Wednesday, Thirsday, Friday, Saturday, Sunday
+}
+
+
 
