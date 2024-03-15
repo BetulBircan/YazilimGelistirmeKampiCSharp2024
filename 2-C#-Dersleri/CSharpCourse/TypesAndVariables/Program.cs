@@ -50,6 +50,12 @@ Console.WriteLine(Days.Friday);
 //enum değerleri 0 dan başlar ve friday de 4 e karşılık gelir ekrana 4 yazar
 Console.WriteLine((int)Days.Friday);
 
+//var keywordü değişken türü değildirama değişken tutmak için kullanılır.
+var number7 = 10; //değer neyse değişkenin veri tipi varda o olur.burada integer dır.
+number7 = 'A'; //CHAR olduğu için ascii codu 65 atar o yüzden hata vermez.
+Console.WriteLine("Number7 is {0}", number7);
+
+
 //Console.WriteLine("Hello, World!");
 Console.ReadLine();
 
