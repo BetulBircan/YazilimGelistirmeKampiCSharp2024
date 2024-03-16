@@ -55,6 +55,7 @@ var number7 = 10; //değer neyse değişkenin veri tipi varda o olur.burada inte
 number7 = 'A'; //CHAR olduğu için ascii codu 65 atar o yüzden hata vermez.
 Console.WriteLine("Number7 is {0}", number7);
 
+//Şart Blokları(if) : Bizim uygulamalarımızda belli bir şarta göre uygulamanın akışını değiştirmek için kullanılan bloklardır.
 
 //Console.WriteLine("Hello, World!");
 Console.ReadLine();
