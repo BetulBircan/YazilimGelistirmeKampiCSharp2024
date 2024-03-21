@@ -10,15 +10,17 @@ var result2 = Add3(4);
 Console.WriteLine(result2);
 
 //number1 in değeri burada 20 ama ref olarak tanımlı
-int number1;
-int number2 = 100;
+//int number1;
+//int number2 = 100;
 //değeri 30 oldu çünkü methodda 30 olarak tanımlandı onun referansıbı aldı
 //var result3 = Add4(ref number1, number2);
 
 //out un reften farkı ref te number 1 e mutlaka değer vermek zorundayız ama out da böyle birşey yoktur değer verilmeyebilir.
-var result3 = Add4(out number1, number2);
-Console.WriteLine(result3);
-Console.WriteLine(number1); //buraya da 30 yazar
+//var result3 = Add4(out number1, number2);
+//Console.WriteLine(result3);
+//Console.WriteLine(number1); //buraya da 30 yazar
+Console.WriteLine(Multiply(2,5));
+Console.WriteLine(Multiply(2, 5, 4));
 Console.ReadLine();
 //void de sadece işlem yap dediğimizde yapar.değer döndürmez
 static void Add()
@@ -55,4 +57,15 @@ static int Add4(out int number1, int number2)
     //number1 in değeri brada 30. ref keyword ile tanımlandı
     number1 = 30;
     return number1 + number2;
+}
+
+//method overloading
+static int Multiply(int number1, int number2)
+{
+    return number1 * number2;
+}
+//overload methodlar : aynı method adı kullanılır farklı parametreler alabilir. biri 2 diğeri 3 method alabilir
+static int Multiply(int number1,int number2, int number3)
+{
+    return number1 * number2 * number3;
 }
