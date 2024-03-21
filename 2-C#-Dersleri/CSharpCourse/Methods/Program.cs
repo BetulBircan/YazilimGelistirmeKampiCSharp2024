@@ -10,10 +10,13 @@ var result2 = Add3(4);
 Console.WriteLine(result2);
 
 //number1 in değeri burada 20 ama ref olarak tanımlı
-int number1 = 20;
+int number1;
 int number2 = 100;
-                     //değeri 30 oldu çünkü methodda 30 olarak tanımlandı onun referansıbı aldı
-var result3 = Add4(ref number1, number2);
+//değeri 30 oldu çünkü methodda 30 olarak tanımlandı onun referansıbı aldı
+//var result3 = Add4(ref number1, number2);
+
+//out un reften farkı ref te number 1 e mutlaka değer vermek zorundayız ama out da böyle birşey yoktur değer verilmeyebilir.
+var result3 = Add4(out number1, number2);
 Console.WriteLine(result3);
 Console.WriteLine(number1); //buraya da 30 yazar
 Console.ReadLine();
@@ -40,7 +43,14 @@ static int Add3(int x,int number1 = 30, int number2 = 30)
 }
 
 //ref : değer tipli bir değişkeni referans tipli bir değişken olarak çevirir.
-static int Add4(ref int number1, int number2)
+//static int Add4(ref int number1, int number2)
+//{
+//    //number1 in değeri brada 30. ref keyword ile tanımlandı
+//    number1 = 30;
+//    return number1 + number2;
+//}
+
+static int Add4(out int number1, int number2)
 {
     //number1 in değeri brada 30. ref keyword ile tanımlandı
     number1 = 30;
